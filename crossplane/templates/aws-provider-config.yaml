@@ -9,14 +9,14 @@
 #  credentials:
 #    source: InjectedIdentity
 #---
-#apiVersion: pkg.crossplane.io/v1
-#kind: Provider
-#metadata:
-#  annotations:
-#    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
-#  name: provider-aws
-#spec:
-#  package: crossplane/provider-aws:v0.24.1
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+  name: provider-aws
+spec:
+  package: sqerison/provider-aws:test-version
 #  controllerConfigRef:
 #    name: aws-config
-#
+
