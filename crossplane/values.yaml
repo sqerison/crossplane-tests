@@ -1,6 +1,3 @@
-accountId: 237489059256
-environment: "dev55"  # Should be overridden by Argo
-
 crossplane:
   replicas: 1
 
